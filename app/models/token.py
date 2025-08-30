@@ -3,7 +3,7 @@ from datetime import datetime,timezone
 
 class TokenBlockList(db.Model):
     __tablename__ = "TokenBlockList"
-    id = db.Colum(db.integer,primary_key=True)
+    id = db.Column(db.Integer,primary_key=True)
     jti = db.Column(db.String(),nullable=True)
     created_at = db.Column(db.DateTime(), default = datetime.now(timezone.utc))
 
